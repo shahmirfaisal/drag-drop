@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orangered;
+}
+
+.container {
+  margin: 20px 0 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: 150px;
+  grid-gap: 30px;
+}
+
+.empty {
+  background-color: white;
+  border: 5px solid white;
+}
+
+.draggable {
+  height: 100%;
+  background-color: dodgerblue;
+  cursor: move;
+}
+
+.draggable.invisible {
+  visibility: hidden;
+}
